@@ -23,6 +23,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+  await client.change_presence(activity=discord.Game('!commands'))
+
   if message.author == client.user:
     return
 
