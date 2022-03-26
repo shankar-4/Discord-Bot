@@ -120,9 +120,6 @@ Official website - https://theturingclub.in/ ''')
     await message.channel.send("I am a bot and i dont have feelings")
   if message.content.startswith('Who are you'):
     await message.channel.send("I am TTC Help Bot and i will provide information regarding TTC club ")
-  if message.content.startswith('!hello'):
-    await message.channel.send("Hello,Good to see you")
-  
 
   
   
