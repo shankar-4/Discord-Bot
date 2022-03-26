@@ -5,17 +5,11 @@ import requests
 import random
 from keep_alive import keep_alive
 client = discord.Client()
-  
+ 
 hello=["Hey there","Hi there","Hey","Hi","Yo","Hola","Good day","Sup?","Hey, nice to meet you","hello"]
 bye=["Bye","bye", "See you later", "Goodbye", "Nice chatting with you, bye", "Till next time","Adios"]
 hello_words=["Hello","Hi","Good to see you","How may I help you?","What can I help you with?","Welcome to the server. How may I help you?"]
 bye_reply=["Have a nice day"," thank you","bye"]
-
-def get_quote():
-  response = requests.get("https://zenquotes.io/api/random")
-  json_data = json.loads(response.text)
-  quote = json_data[0]['q'] + " -" + json_data[0]['a']
-  return(quote)
 
 @client.event
 async def on_ready():
@@ -23,7 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-  await client.change_presence(activity=discord.Game('!commands'))
+  await client.change_presence(activity=discord.Game('!help'))
 
   if message.author == client.user:
     return
@@ -31,9 +25,6 @@ async def on_message(message):
   msg = message.content
   if message.author == client.user:
     return
-  if msg.startswith('$inspire'):
-    quote = get_quote()
-    await message.channel.send(quote)
   if any(word in msg for word in hello):
     await message.channel.send(random.choice(hello_words))
   if any(word in msg for word in bye):
