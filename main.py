@@ -45,7 +45,7 @@ async def on_message(message):
 * Improved coordination and focus of resources, and Better use of data.
 
 ''')
-  if  message.content.startswith('!currentevent'):
+  if  message.content.startswith('!current event'):
         await message.channel.send('''
   Current event going on is BOT-A-THON''')
   
