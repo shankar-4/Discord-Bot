@@ -17,3 +17,5 @@ commands:
 !socialmedia
 
 !mentors
+
+!hello 
