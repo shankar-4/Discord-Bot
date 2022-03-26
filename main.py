@@ -72,7 +72,7 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
 * Nishtha Jain - Co Pr Head 
 * Nihal Kadam - Bootcamp Coordinator
 * Aakash Rajaraman - Project Strategist''')
-  if  message.content.startswith('!commands'):
+  if  message.content.startswith('!help'):
         await message.channel.send(''' 
 * !team
 * !sig
@@ -81,7 +81,9 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
 * !partnerships
 * !goals
 * !socialmedia
-* !mentors''')
+* !mentors
+* !hello
+* !bye''')
   if  message.content.startswith('!socialmedia'):
         await message.channel.send('''     
 Discord Server link: https://discord.gg/8aUecspTfC
