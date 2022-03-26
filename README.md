@@ -21,3 +21,5 @@ commands:
 !mentors
 
 !hello 
+
+!bye
