@@ -2,6 +2,8 @@
 A basic bot on TTC club
 
 commands:
+
+
 !team
 
 !sig
