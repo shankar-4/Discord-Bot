@@ -16,7 +16,7 @@ commands:
 
 !goals
 
-!socialmedia
+!social media
 
 !mentors
 
