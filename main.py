@@ -80,11 +80,11 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
 * !current event
 * !partnerships
 * !goals
-* !socialmedia
+* !social media
 * !mentors
 * !hello
 * !bye''')
-  if  message.content.startswith('!socialmedia'):
+  if  message.content.startswith('!social media'):
         await message.channel.send('''     
 Discord Server link: https://discord.gg/8aUecspTfC
 
