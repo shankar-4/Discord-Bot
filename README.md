@@ -22,6 +22,8 @@ commands:
 
 !goals
 
+!list of events
+
 !social media
 
 !mentors
