@@ -77,16 +77,16 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
     
   if  message.content.startswith('!help'):
         await message.channel.send(''' 
-* !team
-* !sig
-* !agenda
-* !current event
-* !partnerships
-* !goals
-* !social media
-* !mentors
-* !hello
-* !bye''')
+-> !team
+-> !sig
+-> !agenda
+-> !current event
+-> !partnerships
+-> !goals
+-> !social media
+-> !mentors
+-> !hello
+-> !bye''')
     
   if  message.content.startswith('!social media'):
         await message.channel.send('''     
