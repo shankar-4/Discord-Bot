@@ -30,15 +30,15 @@ async def on_message(message):
   
   if message.content.startswith('!goals'):
     await message.channel.send('''
-* Expose Members to Open - Source Community
+-> Expose Members to Open - Source Community
 
-* Train students in the Opensource platform to take up projects
+-> Train students in the Opensource platform to take up projects
 
-* Delivering technical assistance, including peer-to-peer learning
+-> Delivering technical assistance, including peer-to-peer learning
 
-* More active partnerships with opensource industry members.
+-> More active partnerships with opensource industry members.
 
-* Improved coordination and focus of resources, and Better use of data.
+-> Improved coordination and focus of resources, and Better use of data.
 
 ''')
   if  message.content.startswith('!features'):
@@ -50,10 +50,10 @@ async def on_message(message):
   
   if  message.content.startswith('!partnerships'):
         await message.channel.send('''
-* DataCamp
-* Interview Cake
-* Azure Developer
-* Codeflow - OpeForce 2022''')
+-> DataCamp
+-> Interview Cake
+-> Azure Developer
+-> Codeflow - OpeForce 2022''')
     
   if  message.content.startswith('!sig'):
         await message.channel.send('''
