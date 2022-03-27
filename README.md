@@ -12,6 +12,8 @@ commands:
 
 !current event
 
+!upcoming event
+
 !partnerships
 
 !goals
