@@ -63,14 +63,17 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
   if  message.content.startswith('!team'):
         await message.channel.send('''
 * Rishi R - Club Lead
-* Anudeep Nameneni - Club Manager
-* Vishnu Sai A - Treasurer 
-* Amy Mariam Thomas - Student Coordinator     
+* Anudeep N - Club Co Lead
+* Aakash R - Club Manager
+* Amy Mariam Thomas - Club Co-Manager
+* Vishnu Sai A - Club Treasurer
 * Abhishek S - Head Designer
-* Raghavendra Dabral - Pr Head 
-* Nishtha Jain - Co Pr Head 
-* Nihal Kadam - Bootcamp Coordinator
-* Aakash Rajaraman - Project Strategist''')
+* Monish - Designer
+* Rahul Ram R - Social Media Manager
+* Diksha C - Outreach Coordinator
+* Nishtha - Content Creator
+* Raghavendra - PR Head
+* Sohan Simha - Content Head''')
     
   if  message.content.startswith('!help'):
         await message.channel.send(''' 
