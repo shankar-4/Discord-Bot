@@ -4,6 +4,7 @@ A basic bot on TTC club and It also delete swear words
 
 commands:
 
+!features
 
 !team
 
