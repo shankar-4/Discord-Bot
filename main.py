@@ -1,16 +1,9 @@
 import discord
 import os
-import json
 import requests
-import random
 from keep_alive import keep_alive
 client = discord.Client()
  
-hello=["Hey there","Hi there","Hey","Hi","Yo","Hola","Good day","Sup?","Hey, nice to meet you","hello"]
-bye=["Bye","bye", "See you later", "Goodbye", "Nice chatting with you, bye", "Till next time","Adios"]
-hello_words=["Hello","Hi","Good to see you","How may I help you?","What can I help you with?","Welcome to the server. How may I help you?"]
-bye_reply=["Have a nice day"," thank you","bye"]
-
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
@@ -25,11 +18,10 @@ async def on_message(message):
   msg = message.content
   if message.author == client.user:
     return
-  if any(word in msg for word in hello):
-    await message.channel.send(random.choice(hello_words))
-  if any(word in msg for word in bye):
-    await message.channel.send(random.choice(bye_reply))
-  
+  if message.content.startswith('!hello'):
+    await message.channel.send('Hi,goood to see you')
+  if message.content.startswith('!bye'):
+    await message.channel.send('Have a nice day')
   if message.content.startswith('!agenda'):
     await message.channel.send('TTC navigate the culture of Open Source Collaboration. This club is being created by the students with interests to create greater opportunities for the students in their career further ahead')
   if message.content.startswith('!goals'):
@@ -107,7 +99,7 @@ Official website - https://theturingclub.in/ ''')
 *  Varun Jain 
 *  Dr. Hariprasad S A 
 *  Dr. V. Vivek 
-*  Dr. Saroj Kumar 
+*  Prof. Roopashree S
 *  Jatinder Pal Singh Bagga ''')
   if message.content.startswith('How are you'):
     await message.channel.send("I am a bot and i dont have feelings")
