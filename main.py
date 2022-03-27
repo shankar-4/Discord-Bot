@@ -88,6 +88,7 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
 -> !upcoming event
 -> !partnerships
 -> !goals
+-> !list of events
 -> !social media
 -> !mentors
 -> !hello
@@ -128,7 +129,26 @@ is entirely driven by students. TTC began its journey with
 lively interactive sessions with well-known technical advocates
 such as Jason Mayes (senior developer advocate at Google for
 TensorFlow) and Sangam Biradar (Technical Advocate at Tenable).''')
-      
+    
+     if  message.content.startswith('!list of events'):
+    await message.channel.send('''  
+October 2021 - TTC's First tech event
+Turing Developer's Summit
+The Turing Developer's Summit was a tech-focused event hosted
+by TTC; a chance to engage with industry leaders such as 
+Vice President of the Linux Foundation, Ibrahim Haddad, and 
+EC Council Board Member Tapan Kumar Jha about concepts that 
+developers will find extremely useful: an introduction to the
+vast world of Linux, and hacking with Kali.
+
+January 2022 -TTC's First Patnership 
+TTC has previously hosted events with industry leaders and 
+hands-on workshops, but for the first time in January 2022,
+TTC partnered with Datacamp to provide certified courses, 
+guided and unguided projects worth $399 for free.
+
+Engineer's day event ''')
+    
     if  message.content.startswith('!upcoming event'):
         await message.channel.send('''
 Project Sprint
