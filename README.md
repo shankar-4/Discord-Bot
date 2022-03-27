@@ -1,5 +1,5 @@
 # Discord-Bot
-A basic bot on TTC club and It also delete which are NSFW
+A bot on TTC club and It also delete words which are NSFW
 
 
 commands:
