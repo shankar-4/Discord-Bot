@@ -81,6 +81,7 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
 -> !sig
 -> !agenda
 -> !current event
+-> !upcoming event
 -> !partnerships
 -> !goals
 -> !social media
