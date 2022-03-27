@@ -4,6 +4,8 @@ A bot on TTC club and It also delete words which are NSFW
 
 commands:
 
+!history
+
 !features
 
 !team
