@@ -115,6 +115,14 @@ Official website - https://theturingclub.in/ ''')
 *  Prof. Roopashree S
 *  Jatinder Pal Singh Bagga ''')
     
+    if  message.content.startswith('!upcoming event'):
+        await message.channel.send('''
+Project Sprint
+
+Project Sprint is an initiative aimed at inspiring students to embrace their creative side and put their skills into a real project. This will benefit the students' resume and improving skillsets. This event is meant to highlight student efforts in project building in their respective fields. Students may work in group or individually. They are encouraged to design and implement an innovative technology or implement an existing technology to a new use case, relating to either hardware or software fields.  
+The event is currently scheduled to kick off on April 1st, with the showcase happening on 16th of April.
+Registration : https://forms.gle/GW7edYYJpqDfCUMK7''')
+    
   if message.content.startswith('How are you'):
     await message.channel.send("I am a bot and i dont have feelings")
     
