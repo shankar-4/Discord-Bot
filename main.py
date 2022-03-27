@@ -79,6 +79,8 @@ SIG is a Special Intrest Group where students work on specific ways to contribut
     
   if  message.content.startswith('!help'):
         await message.channel.send(''' 
+-> !history
+-> !features
 -> !team
 -> !sig
 -> !agenda
@@ -109,7 +111,7 @@ Twitter - https://twitter.com/theturingclubJU
 
 Official website - https://theturingclub.in/ ''')
     
-  if  message.content.startswith('!mentors'):
+    if  message.content.startswith('!mentors'):
         await message.channel.send('''    
 *  Dr. Chenraj Roychand 
 *  Varun Jain 
@@ -118,6 +120,15 @@ Official website - https://theturingclub.in/ ''')
 *  Prof. Roopashree S
 *  Jatinder Pal Singh Bagga ''')
     
+    if  message.content.startswith('!history'):
+    await message.channel.send('''  
+August 2021 - Foundation of TTC
+TTC was established at Jain University on August 6, 2021, and
+is entirely driven by students. TTC began its journey with 
+lively interactive sessions with well-known technical advocates
+such as Jason Mayes (senior developer advocate at Google for
+TensorFlow) and Sangam Biradar (Technical Advocate at Tenable).''')
+      
     if  message.content.startswith('!upcoming event'):
         await message.channel.send('''
 Project Sprint
@@ -127,7 +138,7 @@ The event is currently scheduled to kick off on April 1st, with the showcase hap
 Registration : https://forms.gle/GW7edYYJpqDfCUMK7''')
       
     
-  if message.content.startswith('How are you'):
+    if message.content.startswith('How are you'):
     await message.channel.send("I am a bot and i dont have feelings")
     
   if message.content.startswith('Who are you'):
