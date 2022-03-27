@@ -41,6 +41,8 @@ async def on_message(message):
 * Improved coordination and focus of resources, and Better use of data.
 
 ''')
+  if  message.content.startswith('!features'):
+    await message.channel.send('''It provides information about the Turing club and it will also delete message which are NSFW''''')
     
   if  message.content.startswith('!current event'):
         await message.channel.send('''
@@ -123,13 +125,20 @@ Project Sprint
 Project Sprint is an initiative aimed at inspiring students to embrace their creative side and put their skills into a real project. This will benefit the students' resume and improving skillsets. This event is meant to highlight student efforts in project building in their respective fields. Students may work in group or individually. They are encouraged to design and implement an innovative technology or implement an existing technology to a new use case, relating to either hardware or software fields.  
 The event is currently scheduled to kick off on April 1st, with the showcase happening on 16th of April.
 Registration : https://forms.gle/GW7edYYJpqDfCUMK7''')
+      
     
   if message.content.startswith('How are you'):
     await message.channel.send("I am a bot and i dont have feelings")
     
   if message.content.startswith('Who are you'):
     await message.channel.send("I am TTC Help Bot and i will provide information regarding TTC club ")
-
+  swearwords=['fuck','fuck you','shit','asshole','son of a b*tch','bitch','bastard','nigga','holy shit']
+      
+  for x in swearwords:
+    if x in message.content: 
+     await message.delete()
+     await message.channel.send("You can't say that!")
+    
   
   
     
